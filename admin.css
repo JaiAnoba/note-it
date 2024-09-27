@@ -74,6 +74,11 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
+nav ul li a:hover {
+    background-color: #036e4c;
+    color: #ffffff;
+}
+
 .logos {
     display: none;
 }
@@ -86,11 +91,6 @@ nav ul li a {
 .log {
     position: relative;
     right: 8px;
-}
-
-nav ul li a:hover {
-    background-color: #036e4c;
-    color: #ffffff;
 }
 
 .user {
@@ -259,9 +259,8 @@ nav ul li a:hover {
 }
 
 /* RESPONSIVE */
-@media (min-width: 1900px) {
+@media (min-width: 1361px) {
     .sidebar {
-        position: relative;
         height: 1150px;
         padding: 20px 0;
         transition: width 0.3s ease; 
@@ -329,7 +328,7 @@ nav ul li a:hover {
     }
 
     .card {
-        min-width: 385px;
+        min-width: 370px;
     }
 
     .card h3, .card p {
@@ -357,24 +356,23 @@ nav ul li a:hover {
     }
 }
 
-@media (min-width: 1301px) and (max-width: 1899px) {
-    .sidebar {    
-        min-width: 330px; 
-        height: 1100px;
+@media (min-width: 1201px) and (max-width: 1360px) {
+    .sidebar {
+        min-width: 78px;
+        height: 107%;
         padding: 20px 0;
         transition: width 0.3s ease; 
     }
-
     .logo p {
-        font-weight: 700;
-        font-size: 3rem; 
+        font-size: 0;
     }
-
+    .log {
+        left: 0;
+    }
     nav ul li a {
-        font-size: 1.3rem; 
+        font-size: 0; 
         padding: 10px 0;
     }
-
     nav ul li a .icon {
         font-size: 1.5rem;      
         width: 25px;
@@ -382,74 +380,68 @@ nav ul li a:hover {
         position: relative;
         left: 5px;
     }
-
-    .user {
-        top: 520px;        
-    }
-
-    .user .profile {
-        width: 65px;
-        height: 65px;
+    .logos {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        top: 15px;
         left: 10px;
+        width: 45px;
+        height: 45px;
     }
-
-    .name .hi  {
-        font-size: 1.6rem;
+    .user {
+        top: 570px;        
     }
-
-    .name{
-        font-size: 1.1rem;
+    .user .profile {
+        width: 40px;
+        height: 40px;
     }
-
+    .user .name {
+        display: none; 
+    }
     .main {
-        padding: 0px 20px;
-        bottom: 25px;
+        padding: 10px 20px;
+       
     }
-
     .header {
-        top: 10px;
+        top: 29px;
     }
-
     .header h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
-
     .grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
         transition: width 0.3s ease; 
     }
-
-    .card {
-        min-width: 385px;
+    .card { 
+        min-width: 300px;
         height: 300px;
         top: 20px;    
     }
-
     .card h3, .card p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
-
     .card .footer {
-        top: 109px;
+        top: 100px;
     }
-
     .search input[type="text"] {
+        min-width: 400px;
         height: 35px;
     }
-
     .add {
         padding: 5px 10px;
-        width: 150px;
-        height: 36px;
-        font-size: 0.9rem;
+        width: 120px;
+        height: 35px;
+        font-size: 0.8rem;
     }
 }
 
-@media (min-width: 1041px) and (max-width: 1300px) {
+@media (min-width: 1041px) and (max-width: 1200px) {
     .sidebar {
         min-width: 78px;
-        height: 107%;
+        height: 105%;
         padding: 20px 0;
         transition: width 0.3s ease; 
     }
@@ -519,6 +511,7 @@ nav ul li a:hover {
     }
 
     .card { 
+        min-width: 300px;
         height: 300px;
         top: 20px;    
     }
@@ -528,7 +521,7 @@ nav ul li a:hover {
     }
 
     .card .footer {
-        top: 130px;
+        top: 100px;
     }
 
     .search input[type="text"] {
@@ -544,7 +537,7 @@ nav ul li a:hover {
     }
 }
 
-@media (min-width: 800px) and (max-width: 1040px) {
+@media (min-width: 801px) and (max-width: 1040px) {
     .sidebar {
         min-width: 78px;        
         padding: 20px 0;
@@ -613,6 +606,7 @@ nav ul li a:hover {
     }
 
     .card {
+        min-width: 300px;
         height: 300px;
         top: 20px;    
     }
@@ -622,7 +616,7 @@ nav ul li a:hover {
     }
 
     .card .footer {
-        top: 140px;
+        top: 105px;
     }
 
     .search input[type="text"] {
@@ -638,7 +632,7 @@ nav ul li a:hover {
     }
 }
 
-@media (min-width: 480px) and (max-width: 799px) {
+@media (min-width: 480px) and (max-width: 800px) {
     .sidebar {
         min-width: 70px;
         height: 104%;
@@ -708,6 +702,7 @@ nav ul li a:hover {
     }
 
     .card {
+        min-width: 300px;
         height: 300px;
         top: 20px;    
     }
@@ -717,7 +712,7 @@ nav ul li a:hover {
     }
 
     .card .footer {
-        top: 140px;
+        top: 105px;
     }
 
     .search input[type="text"] {

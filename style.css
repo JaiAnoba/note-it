@@ -546,13 +546,15 @@ input {
 }
 
 /*RESPONSIVE*/
-@media (min-width: 1501px) {
+/* @media (min-width: 1501px) { */
     header {
         padding: 25px 30px;
     }
     nav h3 {
         position: relative;
         font-size: 2.3rem; 
+        bottom: 10px;
+        left: 20px;
     }
     nav ul.menu li {
         position: relative;
@@ -563,7 +565,7 @@ input {
    
     .main {
         flex-direction: row;
-        top: 50px;
+        top: 60px;
         right: 80px;
     }
     .graphic {
@@ -596,8 +598,9 @@ input {
     }
     .cont button {          
         font-size: 1.1rem;
-    }  
-}
+    }
+  
+/* } */
 
 @media (min-width: 1101px) and (max-width: 1500px) {
     header {
@@ -606,6 +609,8 @@ input {
     nav h3 {
         position: relative;
         font-size: 2.3rem; 
+        bottom: 10px;
+        left: 20px;
     }
     nav ul.menu li {
         position: relative;
@@ -708,6 +713,8 @@ input {
     nav h3 {
         position: relative;
         font-size: 2rem; 
+        bottom: 10px;
+        left: 20px;
     }
     nav ul.menu li {
         position: relative;
@@ -718,23 +725,25 @@ input {
     .main {
         flex-direction: column;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 10px;
     }
     .graphic {
-        margin: 20px 0;
+        align-items: center;
         justify-content: center;
+        left: 5px;  
     }
     .graphic img {
-        width: 70%;
-    }
-    .main, .content, .graphic img {
-        transition: all 0.3s ease-in-out;
+        width: 68%;
     }
     .content {
         width: 90%;
-        height: 350px;
-        padding: 0 60px;
-        left: 10px;
+        height: 380px;
+        padding: 0 30px;
+        position: relative;
+        left: 100px;
+    }
+    .main, .content, .graphic img {
+        transition: all 0.3s ease-in-out;
     }
     .content h1 {
         font-size: 2.7rem;
@@ -804,36 +813,41 @@ input {
     }
 
     nav h3 {
+        position: relative;
         font-size: 30px;
         margin-right: 150%;
+        bottom: 1px;
+        left: 20px;
     }
 
     nav ul.menu li {
-        margin-right: 20%;
+        margin-right: 10%;
         font-size: 18px;
+        right: -2px;
     }
 
     .main {
         flex-direction: column;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 10px;
     }
 
     .graphic {
-        margin: 20px 0;
+        align-items: center;
         justify-content: center;
+        left: 5px;  
     }
 
     .graphic img {
-        width: 70%;
+        width: 68%;
     }
 
     .content {
-        width: 90%;
-        height: 350px;
+        width: 85%;
+        height: 300px;
         padding: 0 30px;
-        left: 10px;
-        margin-top: -40px;
+        position: relative;
+        left: 97px;
     }
 
     .content h1 {
