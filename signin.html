@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="pics/logooo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+</head>
+<body>
+     <!-- Header Section -->
+     <header>
+        <nav>
+            <h3>Note<span>It!</span></h3>
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="minicon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="wrap">
+        <div class="container_sign">
+            <p class="its">Welcome Back!</p> 
+            <img src="pics/file.png" class="pics">
+            <p class="quotes">"Good notes today make great insights tomorrow."</p>
+        </div>
+            
+        <div class="container">
+            <div class="title">
+                <h1>Sign<span> In</span></h1>
+                <div class="choice">
+                    <img src="pics/fb.png">
+                    <img src="pics/gg.png">
+                    <img src="pics/insta.png">
+                </div>
+                <p class="text">Or</p>
+            </div>
+
+            <form action="admin.html">  
+                <div class="box">            
+                    <div class="input">
+                        <p>Username</p>
+                        <p><input type="text" name="username"></p>
+                    </div>
+                    <div class="input">
+                        <p>Password</p>
+                        <p><input type="password" name="password"></p>
+                    </div>
+                </div>  
+                <div class="options">
+                    <p><input type="checkbox"> Sign Me In</p>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="button">SIGN IN</button>
+                <p class="footer_sign">Don't have an account?<a href="register.html" class="link_sign"> Sign Up</a></p>
+            </form>
+        </div>     
+    </div>
+    
+</body>
+</html>
