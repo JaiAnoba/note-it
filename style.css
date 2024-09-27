@@ -79,7 +79,8 @@ nav ul.menu {
 }
 
 nav ul.menu li {
-    margin-right: 42%;
+    position: relative;
+    margin-right: 35%;
     font-size: 21px;
 }
 
@@ -96,7 +97,7 @@ nav ul.menu li a:hover {
     transition: 0.1s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     /* Hide the reg. menu */
     nav ul.menu {
         display: flex;
@@ -142,6 +143,7 @@ nav ul.menu li a:hover {
 
 /* HOME MAIN CONTENT*/
 .main {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -166,9 +168,9 @@ nav ul.menu li a:hover {
     position: relative;
     top: 50px;  
     right: 16%; 
-    width: 37%;
-    height: 600px;
-    padding: 0 80px;
+    width: 780px;
+    height: 550px;
+    padding: 10px 80px;
     background-color: #d9e8ee; 
     border-radius: 10px;
 }
@@ -177,7 +179,7 @@ nav ul.menu li a:hover {
     position: relative;
     align-items: center;
     justify-content: center;
-    top: 85px
+    top: 50px
 }
 
 .content h1 {
@@ -194,7 +196,7 @@ nav ul.menu li a:hover {
 }
 
 .content p {
-    font-size: 18.5px;
+    font-size: 1.2rem;
     color: #333;
     position: relative;
     bottom: 30px;
@@ -208,6 +210,7 @@ nav ul.menu li a:hover {
     justify-content: center;
     align-items: center;
     left: 30px;
+    bottom: 20px;
     width: 90%;
     text-decoration: none;
     background: #079e71;
@@ -245,13 +248,14 @@ nav ul.menu li a:hover {
 }
 
 .container {
-    width: 600px;
+    width: 100%;
     height: 755px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     text-align: center; 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     border-radius: 7px;
     background: #f7f6f6;  
 }
@@ -352,7 +356,7 @@ form {
 }
 
 .button {
-    width: 88%;
+    width: 455px;
     height: 50px;
     padding: 13px;
     background-color: #079e71;
@@ -542,6 +546,258 @@ input {
 }
 
 /*RESPONSIVE*/
+@media (min-width: 1501px) {
+    header {
+        padding: 25px 30px;
+    }
+    nav h3 {
+        position: relative;
+        font-size: 2.3rem; 
+    }
+    nav ul.menu li {
+        position: relative;
+        right: 90px;
+        padding: 0 5px;
+        font-size: 1.3em;
+    }
+   
+    .main {
+        flex-direction: row;
+        top: 60px;
+        right: 80px;
+    }
+    .graphic {
+        right: 100px;
+    }
+    .graphic img {
+        width: 680px;
+        transition: width 0.3s ease; 
+    }
+    .content {
+        width: 600px;
+        height: 580px;
+        padding: 20px 70px;
+        left: 0px;
+        transition: width 0.3s ease; 
+    }
+    .content h1 {
+        font-size: 3rem;
+    }
+    .content p {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    .cont {
+        top: 60px;
+    }
+    .cont .button_sign {
+        top: 0; 
+        right: 20px;
+    }
+    .cont button {          
+        font-size: 1.1rem;
+    }
+   
+}
+
+@media (min-width: 1100px) and (max-width: 1500px) {
+    header {
+        padding: 25px 30px;
+    }
+    nav h3 {
+        position: relative;
+        font-size: 2.3rem; 
+    }
+    nav ul.menu li {
+        position: relative;
+        right: 90px;
+        padding: 0 5px;
+        font-size: 1.3em;
+    }
+    .main {
+        top: 150px;
+        gap: 60px;
+        right: 20px;
+    }
+    .graphic {
+        right: 110px;
+    }
+    .graphic img {
+        width: 580px;
+    }
+    .main, .content p, .graphic img {
+        transition: all 0.3s ease-in-out;
+    }
+    .content {
+        width: 495px;
+        height: 530px;
+        padding: 20px 70px;
+        left: 1px;
+        transition: width 0.3s ease; 
+    }
+    .content h1 {
+        font-size: 3rem;
+    }
+    .content p {
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+    .cont {
+        top: 60px;
+    }
+    .cont .button_sign {
+        top: 0; 
+        right: 20px;
+    }
+    .cont button {          
+        font-size: 1.1rem;
+    }
+    /*SIGNIN*/
+    .container_sign {
+        display: none;
+    }
+    .wrap {
+        border: none;
+    }
+    .container {
+        background: none;
+        left: 300px;
+        bottom: 20px;
+        transition: width 0.3s ease;
+    }
+    .options {     
+        font-size: 0.9rem;
+    }
+    .options a {
+        font-size: 0.8rem;
+        text-align: right;
+    }
+    .button {
+        top: 40px;
+    }
+    /*REGISTER*/
+    .logo {
+        display: none;
+    }
+    .wrapper {
+        display: block;
+        width: 100vh;
+        height: 50%; 
+        top: 80px;
+        border: none;
+    }
+    .form {
+        background: none;
+    }
+        
+    .input_reg input {
+        height: 40px;
+    }
+    .submit {   
+        height: 45px;
+    }
+    .title_reg {
+        font-size: 2.7rem;
+        text-align: center;
+    } 
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+    header {
+        padding: 20px 30px;
+    }
+    nav h3 {
+        position: relative;
+        font-size: 2rem; 
+    }
+    nav ul.menu li {
+        position: relative;
+        right: 45px;
+        padding: 0 35px;
+        font-size: 1.2rem;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .graphic {
+        margin: 20px 0;
+        justify-content: center;
+    }
+    .graphic img {
+        width: 70%;
+    }
+    .main, .content, .graphic img {
+        transition: all 0.3s ease-in-out;
+    }
+    .content {
+        width: 90%;
+        height: 350px;
+        padding: 0 60px;
+        left: 10px;
+    }
+    .content h1 {
+        font-size: 2.7rem;
+    }
+    .content p {
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+    .button button {             
+        font-size: 1.5rem;
+    }
+
+    /*SIGNIN*/
+    .container_sign {
+        display: none;
+    }
+    .wrap {
+        border: none;
+    }
+    .container {
+        background: none;
+        left: 195px;
+        bottom: 20px;
+        transition: width 0.3s ease; 
+    }
+    .options {     
+        font-size: 0.9rem;
+    }
+    .options a {
+        font-size: 0.8rem;
+        text-align: right;
+    }
+    .button {
+        top: 40px;
+    }
+
+    /*REGISTER*/
+    .logo {
+        display: none;
+    }
+    .wrapper {
+        display: block;
+        width: 100vh;
+        height: 50%; 
+        top: 80px;
+        border: none;
+    }
+    .form {
+        background: none;
+    }
+        
+    .input_reg input {
+        height: 40px;
+    }
+    .submit {   
+        height: 45px;
+    }
+    .title_reg {
+        font-size: 2.7rem;
+        text-align: center;
+    } 
+}
 
 @media (min-width: 480px) and (max-width: 768px) {
     header {
@@ -606,8 +862,9 @@ input {
     .container {
         background: none;
         position: relative;
-        left: 75px;
+        left: 85px;
         bottom: 20px;
+        transition: width 0.3s ease; 
     }
 
     .options {     
