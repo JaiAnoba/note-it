@@ -29,7 +29,7 @@ body {
 
 .logo p {
     text-align: center;
-    font-weight: bolder;
+    font-weight: 700;
     font-size: 3rem; 
     color: #000000;
     position: relative;
@@ -229,6 +229,7 @@ nav ul li a:hover {
 }
 
 .card .dot {
+    position: relative;
     width: 15px;
     height: 15px;
     background-color: #f4c542;
@@ -236,29 +237,27 @@ nav ul li a:hover {
 }
 
 .card .date {
+    position: relative;
     font-size: 1rem;
     color: #aaa;
 }
 
 /* RESPONSIVE */
-@media (min-width: 1401px) and (max-width: 1800px) {
+@media (min-width: 1401px) and (max-width: 1600px) {
     .sidebar {
         width: 18%;
-        height: 100%;
+        height: 1100px;
         padding: 20px 0;
         transition: width 0.3s ease; 
     }
 
     .logo p {
-        font-size: 0;
-    }
-
-    .log {
-        left: 0;
+        font-weight: 700;
+        font-size: 3rem; 
     }
 
     nav ul li a {
-        font-size: 0; 
+        font-size: 1.3rem; 
         padding: 10px 0;
     }
 
@@ -275,24 +274,21 @@ nav ul li a:hover {
     }
 
     .user .profile {
-        width: 35px;
-        height: 35px;
+        width: 60px;
+        height: 60px;
     }
-
-
- 
-
 
     .main {
         padding: 10px 20px;
+        bottom: 22px;
     }
 
     .header {
-        top: 29px;
+        top: 10px;
     }
 
     .header h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .grid {
@@ -312,20 +308,18 @@ nav ul li a:hover {
     }
 
     .card .footer {
-        top: 150px;
-        border: solid;
+        top: 160px;
     }
 
     .search input[type="text"] {
-        min-width: 200px;
         height: 35px;
     }
 
     .add {
         padding: 5px 10px;
-        width: 100px;
-        height: 35px;
-        font-size: 0.8rem;
+        width: 150px;
+        height: 36px;
+        font-size: 0.9rem;
     }
 }
 
@@ -362,7 +356,7 @@ nav ul li a:hover {
         display: flex;
         position: relative;
         top: 15px;
-        left: 10px;
+        left: 8px;
         width: 45px;
         height: 45px;
     }
@@ -413,7 +407,7 @@ nav ul li a:hover {
     }
 
     .search input[type="text"] {
-        min-width: 200px;
+        min-width: 400px;
         height: 35px;
     }
 
